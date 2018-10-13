@@ -2,68 +2,73 @@ package converter;
 
 import com.google.gson.annotations.SerializedName;
 
+//Abusing Integer and Boolean classes to avoid writing exclusions :)
+
 public class Npc {
 
 	int npcId;
 	String name;
 	String examine;
-	int size;
+	Integer size;
 
 	@SerializedName("walk-radius")
-	int walk_radius;
+	Integer walk_radius;
 
 	@SerializedName("combat-follow")
-	int combat_follow;
+	Integer combat_follow;
 
-	boolean attackable;
-	boolean aggressive;
-	boolean retreats;
-	boolean poisonous;
+	Boolean  attackable;
+	Boolean  aggressive;
+	Boolean  retreats;
+	Boolean  poisonous;
 
-	int respawn;
+	Integer respawn;
 
 	@SerializedName("max-hit")
-	int max_hit;
+	Integer max_hit;
 
 	@SerializedName("attack-speed")
-	int attack_speed;
+	Integer attack_speed;
 
 	@SerializedName("attack-anim")
-	int attack_anim;
+	Integer attack_anim;
 
 	@SerializedName("defence-anim")
-	int defence_anim;
+	Integer defence_anim;
 
 	@SerializedName("death-anim")
-	int death_anim;
+	Integer death_anim;
 
-	int hitpoints;
+	Integer hitpoints;
 
 	@SerializedName("combat-level")
-	int combat_level;
+	Integer combat_level;
 
 	@SerializedName("attack-level")
-	int attack_level;
+	Integer attack_level;
 
 	@SerializedName("strength-level")
-	int strength_level;
+	Integer strength_level;
 
 	@SerializedName("ranged-level")
-	int ranged_level;
+	Integer ranged_level;
 
 	@SerializedName("magic-level")
-	int magic_level;
+	Integer magic_level;
 
-	@SerializedName("defence_melee")
-	int defence_melee;
+	@SerializedName("defence-melee")
+	Integer defence_melee;
 
 	@SerializedName("defence-ranged")
-	int defence_ranged;
+	Integer defence_ranged;
 
 	@SerializedName("defence-magic")
-	int defence_magic;
+	Integer defence_magic;
 
 	@SerializedName("slayer-req")
-	int slayer_req;
+	Integer slayer_req;
+	
+	@SerializedName("aggressive-distance")
+	Integer aggresive_distance;
 
 }
