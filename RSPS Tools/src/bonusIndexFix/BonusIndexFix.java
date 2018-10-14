@@ -82,9 +82,6 @@ public class BonusIndexFix {
 						System.out.println("Arrays size:"+bonuses.size());
 				}
 					
-				//System.out.println(jo.get("name"));
-				jo.remove("name");
-				jo.addProperty("name", "nothing");
 			}
 			
 			itemWriter.write(gson.toJson(itemArray));
